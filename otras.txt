@@ -1,0 +1,125 @@
+1. ¿El comando git add, lo ejecutamos antes o después de hacer el commit?.
+
+Antes 
+
+ 
+2. ¿Con cual comando podemos ver las etiquetas (tags) de un repositorio?.
+
+git tag
+ 
+
+3. ¿Qué función tiene el mensaje que incluimos en cada commit?
+
+Todas son correctas.
+ 
+ 
+4. Si quiero actualizar la rama en la que estoy trabajando con la rama principal, ¿qué comando debo utilizar?
+
+git rebase
+ 
+ 
+5. Si quiero incluir en la rama principal lo que estuve desarrollando en otra rama, ¿qué comando debo utilizar?
+
+git merge
+
+ 
+6. Si quiero reportar errores, sugerir cambios o características, ¿Qué función de GitHub debo utilizar?
+
+Las incidencias (issues)
+ 
+
+7. ¿Que función debemos activar en GitHub para utilizar un repositorio como página web?
+
+GitHub pages
+ 
+ 
+8. Marca todos los pasos que debo seguir para aportar con mi trabajo a un proyecto al que  no me han agregado como colaborador.
+
+bifurcar el repositorio del proyecto
+Clonar el repositorio bifurcado.
+Crear una nueva rama
+Realizar mis aportes
+Cambiarme a la nueva rama.
+Hacer los commits correspondientes
+subir los cambios a GitHub
+Enviar una pull request
+iniciar una pull request
+Explicar las modificaciones que hice y por qué.
+Darle seguimiento a la pull request hasta que sea combinada o rechazada.
+
+
+9. ¿Cuál es el comando que se utiliza para convertir una carpeta común en un repositorio?
+
+git init
+
+
+10. ¿Cuál es el comando que se utiliza para conocer el estado de un repositorio?
+
+git status
+
+
+11. ¿Cuál es el comando que se utiliza para obtener un listado de todos los commits?
+
+git log
+
+
+12. ¿Qué comando utilizamos para borrar todo lo que está almacenado en el stash?
+
+git stash clear
+ 
+ 
+13. ¿Qué comando utilizamos para ver los orígenes remotos de un repositorio?
+
+git remote
+ 
+ 
+14. ¿Qué comando utilizamos para ver las ramas que tiene un repositorio y en cual estamos trabajando?
+
+git branch
+ 
+
+15. ¿Cuál es el comando para subir los últimos commits a nuestro repositorio remoto?
+
+git push
+
+
+
+Trabajo práctico:
+1. Crear un repositorio en Github con el nombre examenItgrarte
+https://github.com/lucilakim/examenItgrarte
+
+2. Clonar este repositorio mediante SSH.
+git clone git@github.com:lucilakim/examenItgrarte.git
+
+3. Crear un archivo con el nombre comandos.
+4. En el archivo pegar las preguntas y respuestas 9 a 15 de este examen.
+5. hacer commit.
+ git add comandos.txt
+ git commit -m "Sube archivo comandos.txt. Con preguntas y respuestas 9 a 15 del éxamen."
+
+
+6. Asignarle la etiqueta comandos a el commit recién hecho.
+ git tag -m "Sube archivo comandos.txt. Con preguntas y respuestas 9 a 15 del éxamen." comandos
+
+7. enviar los cambios al repositorio remoto.
+ git push
+
+8. crear una rama con el nombre otras y cambiarse a ella.
+ git branch otras
+ git checkout otras
+
+9. Crear un archivo con el nombre otras.
+10. En el archivo pegar las preguntas y respuestas restantes.
+ git add otras.txt
+ git commit -m "Crea archivo otras.txt y agrega las otras preguntas y respuestas del examen."
+
+11. combinar la rama principal con la rama otras.
+ git checkout main 
+ git merge otras
+
+12. enviar los cambios al repositorio remoto.
+ git push
+ 
+
+13. pegar el enlace de su repositorio en el siguiente cuadro de edición.
+https://github.com/lucilakim/examenItgrarte
